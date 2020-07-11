@@ -1,4 +1,4 @@
-# Custom Vision Dockerfile
+# Custom Vision Dockerfile for mas-hackathon-ml
 Exported from customvision.ai.
 
 ## Build
@@ -17,6 +17,8 @@ docker buildx build --platform linux/arm/v7 -t <your image name> --load .
 ## Run the container locally
 ```bash
 docker run -p 127.0.0.1:80:80 -d <your image name>
+
+docker run -p 127.0.0.1:80:80 -d computer-vision
 ```
 
 ## Image resizing
